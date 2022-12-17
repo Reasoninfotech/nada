@@ -1,0 +1,51 @@
+body { font-family: Arial, Helvetica, sans-serif; }
+.main{ overflow-x: hidden;}
+
+@media screen and (min-width: 768px) { .g-50 { --bs-gutter-x: 50px; } }
+
+a { color: #202020; }
+a:hover { color: black; }
+
+.navbar .navbar-brand { padding: 0; margin: 0; margin-top: 85px; font-weight: 700; font-size: 31px; }
+@media only screen and (max-width: 576px) { .navbar .navbar-brand { margin-top: 24px; } }
+
+.bg-item { position: relative; }
+.bg-item::after { content: ''; position: absolute; background-color: #EBEBEB; height: 580px; top: 0; left: 0; right: 0; z-index: -1; }
+@media only screen and (max-width: 576px) { .bg-item::after { height: 100%; } }
+
+.product-summary { margin-top: 85px; margin-bottom: 72px; }
+/* .product-summary .img-col { max-width:350px; } */
+.product-summary .stars { margin-bottom: 16px; }
+.product-summary .stars .light { opacity: .5; }
+.product-summary .stars .avg-star { font-weight: 700; }
+.product-summary .product-info .product-title { font-size: 48px; line-height: 52px; letter-spacing: 0.0125em; margin-bottom: 16px; }
+.product-summary .product-info .product-desc { font-size: 20px; line-height: 28px; letter-spacing: 0.0025em; }
+@media only screen and (max-width: 576px) { .product-summary { margin: 0; margin-bottom: 36px; padding-bottom: 46px; }
+  .product-summary .img-fluid { width: 100%; }
+  .product-summary .product-info .product-title { font-size: 32px; line-height: 36px; }
+  .product-summary .product-info .product-desc { font-size: 18px; line-height: 22px; margin: 0; } }
+
+.product-detail h4 { margin-bottom: 18px; }
+.product-detail .specs { font-size: 18px; }
+.product-detail .specs .tr { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.product-detail .specs .title { font-size: 18px; font-weight: 700; color: #000000; }
+.product-detail .specs .detail { color: #8C8C8C; }
+.product-detail .specs .avtar { min-width: 64px; position: relative; margin-right: 10px; }
+.product-detail .specs .avtar-img { position: relative; width: 65px; }
+@media screen and (min-width: 768px) { .product-detail { height: 550px; }
+  .product-detail h4 { margin-bottom: 36px; }
+  .product-detail .specs { font-size: 18px; border-color: #202020; }
+  .product-detail .specs .title { font-size: 18px; font-weight: 700; }
+  .product-detail .specs .detail { width: auto; }
+  .product-detail .specs .tr { height: 76px; border-bottom: 1px solid #000000; -webkit-box-align: center; -ms-flex-align: center; align-items: center; --bs-gutter-x: 0; }
+  .product-detail .specs .tr .avtar { min-width: 106px; position: relative; }
+  .product-detail .specs .tr .avtar-img { position: absolute; top: 0; bottom: 0; left: 0; margin: auto; }
+  .product-detail .specs.info .title { width: 200px; }
+  .product-detail .specs.info .detail { width: auto; }
+  .product-detail .specs.staring .content { display: -webkit-box; display: -ms-flexbox; display: flex; }
+  .product-detail .specs.staring .title { display: -webkit-box; display: -ms-flexbox; display: flex; width: 100%; }
+  .product-detail .specs.staring .detail { display: -webkit-box; display: -ms-flexbox; display: flex; width: 32%; } }
+
+footer { margin-top: 85px; background-color: #EBEBEB; }
+
+@media only screen and (min-width: 1300px) { .container { max-width: 1240px; } }
